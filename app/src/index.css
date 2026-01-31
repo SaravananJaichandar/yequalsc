@@ -1,0 +1,95 @@
+@import "tailwindcss";
+
+@theme {
+  /* Palette 14 + Purple Accent */
+  --color-neon-blue: #7f5af0;
+  --color-neon-purple: #7f5af0;
+  --color-neon-green: #2cb67d;
+  --color-glass-light: rgba(255, 255, 254, 0.8);
+  --color-glass-dark: rgba(39, 35, 67, 0.6);
+
+  --font-sans: 'Inter', sans-serif;
+  --font-orbitron: 'Orbitron', sans-serif;
+
+  --animate-pulse-slow: pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  --animate-glow: glow 2s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+  0% { box-shadow: 0 0 5px rgba(127, 90, 240, 0.1); }
+  100% { box-shadow: 0 0 20px rgba(127, 90, 240, 0.3), 0 0 10px rgba(127, 90, 240, 0.5); }
+}
+
+/* Palette 14 Light with purple accent */
+:root {
+  --background: 60 100% 99.6%;
+  --foreground: 245 29% 20.6%;
+  --card: 60 100% 99.6%;
+  --card-foreground: 245 29% 20.6%;
+  --popover: 60 100% 99.6%;
+  --popover-foreground: 245 29% 20.6%;
+  --primary: 258 84% 63%;
+  --primary-foreground: 60 100% 99.6%;
+  --secondary: 178 56% 93%;
+  --secondary-foreground: 245 29% 20.6%;
+  --muted: 178 56% 93%;
+  --muted-foreground: 229 22% 23%;
+  --accent: 178 49% 82%;
+  --accent-foreground: 245 29% 20.6%;
+  --destructive: 0 84.2% 60.2%;
+  --destructive-foreground: 60 100% 99.6%;
+  --border: 178 30% 85%;
+  --input: 178 30% 85%;
+  --ring: 258 84% 63%;
+  --radius: 0.75rem;
+}
+
+/* Dark variant */
+.dark {
+  --background: 245 29% 12%;
+  --foreground: 60 100% 99.6%;
+  --card: 245 20% 16%;
+  --card-foreground: 60 100% 99.6%;
+  --popover: 245 20% 16%;
+  --popover-foreground: 60 100% 99.6%;
+  --primary: 258 84% 63%;
+  --primary-foreground: 60 100% 99.6%;
+  --secondary: 245 15% 20%;
+  --secondary-foreground: 60 100% 99.6%;
+  --muted: 245 15% 20%;
+  --muted-foreground: 214 13% 60%;
+  --accent: 245 15% 20%;
+  --accent-foreground: 60 100% 99.6%;
+  --destructive: 0 62.8% 30.6%;
+  --destructive-foreground: 60 100% 99.6%;
+  --border: 245 10% 26%;
+  --input: 245 10% 26%;
+  --ring: 258 84% 63%;
+}
+
+body {
+  background: transparent;
+  overflow: hidden;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #bae8e8;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #8ed8d8;
+}
+.dark ::-webkit-scrollbar-thumb {
+  background: #3d3960;
+  border-radius: 9999px;
+}
+.dark ::-webkit-scrollbar-thumb:hover {
+  background: #4d4980;
+}

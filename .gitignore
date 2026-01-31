@@ -1,0 +1,37 @@
+# User data
+data/raw/*
+!data/raw/.gitkeep
+data/memories/
+models/
+
+# Logs
+logs/
+*.log
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+env/
+.env
+
+# Node
+node_modules/
+dist/
+
+# macOS
+.DS_Store
+
+# IDE
+.vscode/
+.idea/
+
+# Tauri build
+app/src-tauri/target/
+
+# Misc
+*.swp
+*.swo
+*~

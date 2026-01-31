@@ -1,0 +1,10 @@
+lancedb
+sentence-transformers
+fastapi
+uvicorn[standard]
+rich
+PyMuPDF
+pytesseract
+pydantic
+watchdog
+requests
