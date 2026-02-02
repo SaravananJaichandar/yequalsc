@@ -2,6 +2,8 @@
 
 > The cloud is dead. Long live the local.
 
+![y=c demo](demo.gif)
+
 **y=c** is a privacy-first personal knowledge management OS that aggregates your scattered LLM conversations (Claude, ChatGPT), Apple Notes, and documents into a secure, queryable second brain. Everything runs locally. No cloud. No telemetry. Your data never leaves your machine.
 
 Think of it as **Obsidian for the AI era** — source-agnostic, local-first, and built on the principle that your thoughts belong to you.
